@@ -1,5 +1,8 @@
-# ReactJS Project 
+# ReactJS Project
 
+- react using jsx to write
+- class and for are keyword in JS, so need to using className and htmlFor
+- Should to use propType to check data of propsa`
 
 ## Folder structure
 
@@ -16,20 +19,21 @@ src
 |     |__ pages (pages of feature Todo)
 |     |__ index.jsx (entry point of feature Todo)
 |
-|__ App.js        
+|__ App.js
 ```
 
-FiltersViewer 
+FiltersViewer
 
 ```js
 const filters = {
   isPromotion: true,
   salePrice_lte: 100,
   salePrice_gte: 100,
-}
+};
 ```
 
 FILTER_LIST
+
 - id: number
 - getLabel: (filters) => string
 - isActive: (filters) => true/false
@@ -38,19 +42,15 @@ FILTER_LIST
 - onRemove: func
 - onToggle: func
 
-
 ```
 DetailPage handleSubmit
 |__ AddToCartForm (form management)
 |  |__ QuantityField
-``` 
-
+```
 
 /products/:productId --> ProductDescription
 /products/:productId/additional --> ProductAdditional
 /products/:productId/reviews --> ProductReviews
-
-
 
 DetailPage
 Click Chon Mua
@@ -58,10 +58,12 @@ Open Mini Cart
 Go to Cart Page
 
 Cart
+
 - showMiniCart: true / false
 - cartItems -> item (product, quantity)
 
 State tính toán phụ thuộc vào state có sẵn
+
 - cartItemsCount
 - cartTotal
---> createSelector()
+  --> createSelector()
